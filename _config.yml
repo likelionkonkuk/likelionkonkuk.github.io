@@ -1,0 +1,45 @@
+# Site Info
+title:              "건대 멋사 7기"
+description:        "건국대학교 멋쟁이 사자처럼 7기 공지사이트"
+author_name:        "konkuk likelion" # change this to your name
+logo_url:
+
+# Site Settings
+url:                https://likelionkonkuk.github.io # main url
+baseurl:            /the-plain
+permalink:          /:title # Post permalink
+timezone:           Asia/Seoul # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+mathjax:            true  # enables support for mathjax - set to 'false' to disable
+
+# Site Build
+highlighter:        rouge
+markdown:           kramdown
+kramdown:
+    input:          GFM
+sass:
+    style:          :compressed
+
+# Other Params
+include:            [ "robots.txt" ]
+exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile", "script" ]
+plugins:
+  - jekyll-sitemap
+
+
+
+defaults:
+  -
+    scope:
+      path:         ""
+    values:
+      layout:       "null"
+  -
+    scope:
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      type:         "posts"
+    values:
+      layout:       "post"
